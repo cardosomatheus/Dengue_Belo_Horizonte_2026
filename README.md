@@ -40,26 +40,11 @@ source .venv/bin/activate  # Linux/macOS
 pip install -r requirements.txt
 ```
 
-### 2. Extração de Dados
-Para baixar os dados mais recentes (ex: 2026) diretamente do DATASUS:
-```bash
-python projeto/src/extract/download_file.py
-```
-*Os dados serão salvos em `projeto/data/raw/dengue_bh.json`.*
-
-### 3. Tratamento de Dados
-Para processar os dados brutos, renomear colunas e mapear códigos categóricos:
-```bash
-python projeto/src/transform/tratamentos.py
-```
-*O arquivo tratado será gerado em `projeto/data/processed/dengue_bh_tratado.csv`.*
-
-### 4. Análise
-Abra o arquivo `notebook.ipynb` em seu editor ou via Jupyter para visualizar os gráficos de:
+### 2. Análise
+Abra o arquivo `notebook.ipynb` em seu editor ou via Jupyter para extrair, tratar e visualizar os gráficos de:
 - Distribuição por gênero.
-- Sintomas mais comuns.
+- Sintomas mais comuns em mulheres e homens.
 - Análise de casos por estado gestacional.
-- Gráficos de Radar e Barras agrupadas.
 
 ## 📊 Principais Funcionalidades
 - **Extração Dinâmica**: Utiliza o PySUS para buscar arquivos específicos de Dengue por ano.
