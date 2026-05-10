@@ -16,17 +16,20 @@ O pipeline consiste na extração automática via API, processamento dos dados p
 ## 📁 Estrutura do Projeto
 
 ```text
-projeto/
-├── data/
-│   ├── processed/      # Dados limpos e prontos para análise (.csv)
-│   └── raw/            # Dados brutos extraídos do DATASUS (.json / .parquet)
-├── src/
-│   ├── extract/        # Scripts de extração de dados
-│   │   └── download_file.py
-│   └── transform/      # Scripts de limpeza e padronização
-│       └── tratamentos.py
-├── notebook.ipynb      # Análise visual e exploratória
-├── requirements.txt    # Dependências do projeto
+.
+├── projeto/
+│   ├── data/
+│   │   ├── processed/      # Dados limpos e prontos para análise (.csv)
+│   │   └── raw/            # Dados brutos extraídos do DATASUS (.json / .parquet) e documentação
+│   └── src/
+│       ├── extract/        # Scripts de extração de dados
+│       │   └── baixar_arquivo.py
+│       ├── transform/      # Scripts de limpeza e padronização
+│       │   └── tratamentos.py
+│       └── load/           # Scripts de salvamento de arquivos
+│           └── salva_arquivo_csv.py
+├── notebook.ipynb          # Análise visual e exploratória
+├── requirements.txt        # Dependências do projeto
 └── README.md
 ```
 
