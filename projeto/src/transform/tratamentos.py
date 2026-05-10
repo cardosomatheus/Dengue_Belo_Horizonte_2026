@@ -105,11 +105,9 @@ if __name__ == '__main__':
     tratamentos = TratamentosDengue()
     dados = tratamentos.disponibiliza_dados_prontos_para_analise()    
     pprint.pprint(dados.head(2))
-    pprint.pprint(dados['id_classificacao'].unique())
-    #pprint.pprint(dados['id_estado_gestacional'].unique())
-    #pprint.pprint(dados['id_classificacao_final'].unique())
-    #pprint.pprint(dados['classificacao_final'].unique())
-    #pprint.pprint(dados['sexo_literal'].unique())
-    #pprint.pprint(dados['estado_gestacional'].unique())
+    pprint.pprint(dados['sexo'].unique())
+    pprint.pprint(dados['genero'].unique())
+    pprint.pprint(dados['id_estado_gestacional'].unique())
+    pprint.pprint(dados['estado_gestacional'].unique())
     
 
